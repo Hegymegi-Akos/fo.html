@@ -1,58 +1,155 @@
-
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <title>Footer Design</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="ennek.css">
-  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
-</head>
-<body>
+<html lang="hu">
 
-  <footer class="footer">
-  	 <div class="container">
-  	 	<div class="row">
-  	 		<div class="footer-col">
-  	 			<h4>company</h4>
-  	 			<ul>
-  	 				<li><a href="#">válasz</a></li>
-  	 				<li><a href="#">nem müködő szervíz</a></li>
-  	 				<li><a href="#">adatvédelem</a></li>
-  	 				<li><a href="#">Egy elado keksz</a></li>
-  	 			</ul>
-  	 		</div>
-  	 		<div class="footer-col">
-  	 			<h4>get help</h4>
-  	 			<ul>
-  	 				<li><a href="#">FAQ</a></li>
-  	 				<li><a href="#">shipping</a></li>
-  	 				<li><a href="#">returns</a></li>
-  	 				<li><a href="#">order status</a></li>
-  	 				<li><a href="#">payment options</a></li>
-  	 			</ul>
-  	 		</div>
-  	 		<div class="footer-col">
-  	 			<h4>online shop</h4>
-  	 			<ul>
-  	 				<li><a href="#">nézz</a></li>
-  	 				<li><a href="#">táska</a></li>
-  	 				<li><a href="#">cioő</a></li>
-  	 				<li><a href="#">ruha</a></li>
-  	 			</ul>
-  	 		</div>
-  	 		<div class="footer-col">
-  	 			<h4>Kövess be</h4>
-  	 			<div class="social-links">
-  	 				<a href="#"><i class="fab fa-facebook-f"></i></a>
-  	 				<a href="#"><i class="fab fa-twitter"></i></a>
-  	 				<a href="#"><i class="fab fa-instagram"></i></a>
-  	 				<a href="#"><i class="fab fa-linkedin-in"></i></a>
-  	 			</div>
-  	 		</div>
-  	 	</div>
-  	 </div>
-  </footer>
+<head>
+
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hegymegi-Kiss Ákos oldala</title>
+    <link rel="stylesheet" href="ennek.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+
+    <style>
+        body {
+            background-color: yellow;
+            font-family: 'The Nautigal', cursive;
+            font-size: 20px;
+        }
+
+
+        .sidebar {
+
+            font-family: 'Roboto Mono', monospace;
+            margin: 0;
+            padding: 0;
+            width: 200px;
+            background-color: gray;
+            position: fixed;
+            height: 100%;
+            overflow: auto;
+        }
+
+        .sidebar a {
+            display: block;
+            color: black;
+            padding: 16px;
+            text-decoration: none;
+        }
+
+        .sidebar a.active {
+            background-color: goldenrod;
+            color: white;
+        }
+
+        .sidebar a:hover:not(.active) {
+            background-color: #555;
+            color: white;
+        }
+
+        div.content {
+            margin-left: 200px;
+            padding: 1px 16px;
+            height: 1000px;
+        }
+
+        @media screen and (max-width: 700px) {
+            .sidebar {
+                width: 100%;
+                height: auto;
+                position: relative;
+            }
+
+            .sidebar a {
+                float: left;
+            }
+
+            div.content {
+                margin-left: 0;
+            }
+        }
+
+        @media screen and (max-width: 400px) {
+            .sidebar a {
+                text-align: center;
+                float: none;
+            }
+        }
+    </style>
+</head>
+
+<body style="background-color:orange;">
+
+    <div class="sidebar">
+
+        <a href="https://hegymegi-akos.github.io/kollazs_jo/" class="active"> HOME</a>
+
+
+        <a href="https://hegymegi-akos.github.io/kollazs_jo/keplink.html">keplink</a>
+
+        <a href="https://hegymegi-akos.github.io/orarend.html/">órarend</a>
+
+        <a href="https://hegymegi-akos.github.io/kollazs_jo/listak.html">Lista</a>
+        <a href="https://hegymegi-akos.github.io/evszakok.html/">Évszakok</a>
+        <a href="https://hegymegi-akos.github.io/ceges.html/">Pizza lap</a>
+         <a href="https://hegymegi-akos.github.io/xd.html/">Számitógépek</a>
+    </div>
+    <div class="content">
+      
+      
+   
+      
+        <footer class="footer">
+             <div class="container">
+                 <div class="row">
+                     <div class="footer-col">
+                         <h4>company</h4>
+                         <ul>
+                             <li><a href="#">válasz</a></li>
+                             <li><a href="#">nem müködő szervíz</a></li>
+                             <li><a href="#">adatvédelem</a></li>
+                             <li><a href="#">Egy elado keksz</a></li>
+                         </ul>
+                     </div>
+                     <div class="footer-col">
+                         <h4>get help</h4>
+                         <ul>
+                             <li><a href="#">FAQ</a></li>
+                             <li><a href="#">shipping</a></li>
+                             <li><a href="#">returns</a></li>
+                             <li><a href="#">order status</a></li>
+                             <li><a href="#">payment options</a></li>
+                         </ul>
+                     </div>
+                     <div class="footer-col">
+                         <h4>online shop</h4>
+                         <ul>
+                             <li><a href="#">nézz</a></li>
+                             <li><a href="#">táska</a></li>
+                             <li><a href="#">cioő</a></li>
+                             <li><a href="#">ruha</a></li>
+                         </ul>
+                     </div>
+                     <div class="footer-col">
+                         <h4>Kövess be</h4>
+                         <div class="social-links">
+                             <a href="#"><i class="fab fa-facebook-f"></i></a>
+                             <a href="#"><i class="fab fa-twitter"></i></a>
+                             <a href="#"><i class="fab fa-instagram"></i></a>
+                             <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                         </div>
+                     </div>
+                 </div>
+             </div>
+        </footer>
+     
+
+    </div>
 
 </body>
+
 </html>
